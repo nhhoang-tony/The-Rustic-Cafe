@@ -23,6 +23,11 @@ document.addEventListener('DOMContentLoaded', function() {
         history.pushState("", document.title, window.location.pathname);
     }
 
+    // always move to top of page when reloads
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+      }
+
     // change header menu if scroll
     $(function () {
         $(document).scroll(function () {
