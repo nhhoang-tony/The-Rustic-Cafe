@@ -74,7 +74,7 @@
     .homepage-grid-image {height: 300px;}
 
     /* Adjust video parallax*/
-    .homepage-parallax-1 {height: 450px;}
+    .homepage-parallax-1 {height: 350px;}
     .homepage-parallax-1 video { 
         top: 10%;
         width: 100%;
@@ -84,11 +84,11 @@
 
     /* Adjust text on parallax*/
     .title-video-parallax-1{
-        font-size: 22px;
+        font-size: 24px;
         padding: 10%;
-        margin-top: 50%;
+        margin-top: 55%;
     }
-    .title-over-parallax-1 { font-size: 18px;}
+    .title-over-parallax-1 { font-size: 22px;}
     .homepage-menu-button {
         width: 130px;
         height: 45px;
@@ -170,7 +170,7 @@
 
 
 /* Adjust views for tablet */
-@media screen and (min-width: 376px) and (max-width: 766px) {
+@media screen and (min-width: 376px) and (max-width: 769px) {
 
     /* Adjust footer bar logo*/
     .navbar-brand-footer {
@@ -245,7 +245,7 @@
     .title-video-parallax-1{
         font-size: 28px;
         padding: 10%;
-        margin-top: 20%;
+        margin-top: 15%;
     }
     .title-over-parallax-1 { font-size: 40px;}
     .homepage-menu-button {
@@ -325,4 +325,14 @@
         height: 40px;
         border-radius: 40px;
     }
+}
+
+
+/* Adjust view on mobile */
+@media screen and (max-width: 766px) and (orientation: landscape) {
+    .page-description-1-homepage {display: none;}
+    .page-description-2-homepage {display: none;}
+    .page-description-1 {display: none;}
+    .page-description-2 {display: none;}
+    .button-container {display: none;}
 }

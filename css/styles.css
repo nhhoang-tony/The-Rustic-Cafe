@@ -20,7 +20,7 @@
 .navbar-brand {
     transition: color 300ms ease;
     margin-left: 12%;
-    font-family: 'brush script MT';
+    font-family: 'Great Vibes', cursive;
     font-size: 25px;
 }
 
@@ -288,7 +288,7 @@ nav .navbar-nav li span{
 .navbar-brand-footer {
     transition: color 300ms ease;
     margin-left: 12%;
-    font-family: 'brush script MT';
+    font-family: 'Great Vibes', cursive;
     font-size: 25px;
 }
 
@@ -482,7 +482,7 @@ ul.social {
   .title-video-parallax-1 {
     color: white;
     font-size: 50px;
-    font-family: 'brush script MT';
+    font-family: 'Great Vibes', cursive;
     font-weight: 700;
     padding-top: 15%;
     text-align: center;
@@ -494,7 +494,7 @@ ul.social {
     color: white;
     font-size: 50px;
     font-weight: bold;
-    font-family: 'brush script MT';
+    font-family: 'Great Vibes', cursive;
     text-transform: capitalize;
     top: 50%;
     left: 50%;
