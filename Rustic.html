@@ -1,0 +1,446 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Rustic café</title>
+        <link rel = "icon" href="images/Logo.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/media.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/rustic.js"></script>
+    </head>
+    <body>
+        <!--Menu bar-->
+        <header>    
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+                <a class="navbar-brand homepage">
+                    <img class="logo homepage" src="images/LatteArtLogoWhite.png" width="50" height="38" class="d-inline-block align-top" alt="">
+                    The Rustic café
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link homepage" id="header-homepage">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link menu" id="header-menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link gallery" id="header-gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link contact" id="header-contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.facebook.com/therusticcafe"
+                        target="_blank" rel="noopener noreferrer">
+                            <span class="icon fa fa-facebook"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://instagram.com/therusticcafe"
+                        target="_blank" rel="noopener noreferrer">
+                        <span class="icon fa fa-instagram"></span>
+                        </a>
+                    </li>
+                  </ul>    
+              </nav>
+            </div>
+        </header>
+
+        <!--Homepage-->
+        <div id="homepage" style="position: relative">
+            <!--Sidebar on homepage-->
+            <div class="sidebar">
+                <a href="#header-pic-container" class="mini"><i class="fa fa-coffee"></i></a>
+                <a href="#homepage-parallax-1" class="mini"><i class="fa fa-coffee"></i></a>
+                <a href="#homepage-parallax-2" class="mini"><i class="fa fa-coffee"></i></a>
+                <a href="#homepage-parallax-3" class="mini"><i class="fa fa-coffee"></i></a>
+            </div>
+            <!--Header picture-->
+            <div class="header-pic-container" id="header-pic-container">
+                <img class="header-pic-homepage" src="images/Home_Header.jpg">
+                <div class="page-description-1-homepage">
+                    All day breakfast and lunch
+                </div>
+                <h1 class="page-title-homepage">
+                    The Rustic café
+                </h1>
+                <div class="page-description-2-homepage">
+                    Shop 3024A, Ground floor, Top Ryde shopping center
+                </div>
+                <div class="button-container">
+                    <div class="header-button-transparent menu">
+                        <div class="middle">Our Menu</div>
+                    </div>
+                    <div class="header-button-white contact">
+                        <div class="middle">Contact Us</div>
+                    </div>
+                </div>
+                <div class="page-description-scroll">
+                    <a href="#homepage-grid-1" class="mini">
+                        <i class="fa fa-chevron-down" style="font-size: 22px">
+                        <span class="page-description-scroll-text">Scroll down</span></i></a>
+                </div>
+            </div>
+            <!--Flex 1-->
+            <div class="homepage-grid-container" id="homepage-grid-1">
+                <div class="homepage-grid-textbox">
+                    <div class="homepage-grid-title-2">
+                        To the rustic cafe
+                    </div>
+                    <div class="homepage-grid-title-1">
+                        Welcome
+                    </div>
+                    
+                    <div class="homepage-grid-description">
+                        We are a small team of coffee lovers who always strive to perfect ourselves 
+                        in the art of making coffee. 
+                    </div>
+
+                    <div class="homepage-grid-link gallery">
+                        Our gallery
+                    </div>
+                </div>
+                <div class="homepage-grid-image-box">
+                    <img class="homepage-grid-image" id="1_image" src="images/Swan.jpeg">
+                </div>
+            </div>
+            <!--Video parallax-->
+            <div class="homepage-parallax-1" id="homepage-parallax-1">
+                <video class="homepage-laptop-video-parallax" autoplay muted loop>
+                    <source src="images/Rosetta_cropped.mp4" type="video/mp4">
+                </video>
+                <video class="homepage-mobile-video-parallax" autoplay muted loop>
+                    <source src="images/tulip_vertical.mp4" type="video/mp4">
+                </video>
+                <div class="title-video-parallax-1">
+                    Every cup is delivered with passion and dedication
+                </div>
+            </div>
+            <!--Flex 2-->
+            <div class="homepage-grid-container">
+                <div class="homepage-grid-image-box">
+                    <img class="homepage-grid-image" id="1_image" src="images/salmon_avo.jpg">
+                </div>
+                <div class="homepage-grid-textbox">
+                    <div class="homepage-grid-textbox">
+                        <div class="homepage-grid-title-2">
+                            7 am - 4 pm
+                        </div>
+                        <div class="homepage-grid-title-1">
+                            Everyday
+                        </div>
+                        
+                        <div class="homepage-grid-description">
+                            Featuring all day breakfast and lunch, fantastic wraps and sandwiches, 
+                        healthy salads, and of course delicious coffees. 
+                        All within a rustic atmosphere. 
+                        </div> 
+                        <a href="https://www.facebook.com/therusticcafe"
+                        target="_blank" rel="noopener noreferrer">
+                        <div class="homepage-grid-link">
+                            Follow us
+                        </div></a>   
+                    </div>
+                </div>
+            </div>
+            <!--Image parallax 1-->
+            <div class="homepage-parallax-2" id="homepage-parallax-2">
+                <div class="title-over-parallax-1">
+                    Discover our menu
+                </div>
+                <div class="homepage-menu-button menu">
+                    <div class="middle">Our Menu</div>
+                </div>
+            </div>
+            <!--Flex 3-->
+            <div>
+                <div class="homepage-sample-menu-title">
+                    Sample menu
+                </div>
+                <div class="sample-menu-container" style="padding-bottom: 5%;">
+                        <div class="header-sample-menu-box">
+                            <img class="header-sample-menu-image" src="images/Burger.jpg">
+                            <div class="header-sample-menu-description">Burger #1 with beef patty, bacon, lettuce, tomato, beetroot, onion and BBQ sauce</div>
+                        </div>
+                        <div class="header-sample-menu-box">
+                            <img class="header-sample-menu-image" src="images/Pancake.jpg">
+                            <div class="header-sample-menu-description">Homemade pancakes with seasonal fruits, ice cream, drizzled with maple syrup and icing sugar</div>
+                        </div>
+                   
+                        <div class="header-sample-menu-box">
+                            <img class="header-sample-menu-image" src="images/rosetta_1.jpg">
+                            <div class="header-sample-menu-description">Double espresso café latte with lovely latte arts </div>
+                        </div>
+                </div>
+            </div>
+            <!--Image parallax 2-->
+            <div class="homepage-parallax-3" id="homepage-parallax-3">
+                <div class="title-over-parallax-1">
+                    Book a table
+                </div>
+                <div class="homepage-contact-button contact">
+                    <div class="middle">(02) 7900 5209</div>
+                </div>
+            </div>
+            <!--Flex 4-->
+            <div class="background" style="padding-bottom: 5%">
+                <div class="homepage-sample-menu-title">
+                    Comments
+                </div>
+                <div class="homepage-comments">
+                    <div class="each-comment-item">
+                        <div class="comment-content">“Delicious food and chic place. Breakfast is serve fast. 
+                            Located in Top Ryde Shopping Mall. 
+                            With ample table. Will definitely eat again.”</div>
+                            <div class="comment-name">NAY REYNOLDS</div>
+                    </div>
+                    <div class="each-comment-item">
+                        
+                        <div class="comment-content">"Great breakfast good price will be back.
+                            Clean tidy. friendly staff"</div>
+                        <div class="comment-name">ALAN COUHAM</div>
+                    </div>
+                    <div class="each-comment-item">
+                        <div class="comment-content">“Good food, friendly and polite staff. 
+                            Will be back! :)”</div>
+                            <div class="comment-name">KSHITIJA DESHMUKH</div> 
+                    </div>
+                </div>
+                <div class="homepage-comment-button contact">
+                    <div class="middle">Leave a comment</div>
+                </div>
+            </div>
+        </div>
+
+        <!--Menu page-->
+        <div id="menu">
+            <!--Header pic-->
+            <div class="header-pic-container">
+                <img class="header-pic" src="images/Benedict.jpg">
+                <div class="page-description-1">
+                    Everything on our menu is made to order
+                </div>
+                <h1 class="page-title">
+                    Our Menu
+                </h1>
+                <div class="page-description-2">
+                    Be sure to ask about vegetarian and gluten free options
+                </div>
+            </div>
+            <!--Menu info and ubers-->
+            <div class="background">
+                <div class="menu-message">Please call us at (02) 7900 5209 to place an order for pick up within 30 minutes</div>
+                <div class="menu-message" style="padding-top: 2%; padding-bottom: 2%">Alternative, place an order for delivery via</div>
+                <div class="button-container-gallery">
+                    <a href="https://www.ubereats.com/au"
+                    target="_blank" rel="noopener noreferrer">
+                        <div class="gallery-button-dark">
+                            <div class="middle">UberEats</div>
+                        </div></a>
+                    <a href="https://www.menulog.com.au"
+                    target="_blank" rel="noopener noreferrer">
+                        <div class="gallery-button-orange">
+                            <div class="middle">Menulog</div>
+                        </div></a>
+                </div>
+            </div>
+            <div class="background" id="menu-go-here">
+                <!--API call to fetch menu here-->
+            </div>
+            <!--Extra info-->
+            <div class="menu-message background" style="padding-top: 0%; padding-bottom: 3%">
+                For any questions, feel free to drop us a message
+            </div>
+            <div class="button-container-gallery background">
+                <div class="gallery-button-dark gallery">
+                    <div class="middle">Gallery</div>
+                </div>
+                <div class="gallery-button-orange contact">               
+                    <div class="middle">Contact us</div>
+                </div>
+            </div>
+        </div>
+
+        <!--Gallery page-->
+        <div id="gallery" class="background">
+            <!--Header pic-->
+            <div class="header-pic-container">
+                <img class="header-pic" src="images/Gallery_header.jpg">
+                <div class="page-description-1">
+                    The Rustic café
+                </div>
+                <h1 class="page-title">
+                    Gallery
+                </h1>
+                <div class="page-description-2">
+                    Where good memories happen
+                </div>
+            </div>
+
+            <!--API call to get images from S3-->
+            <div id="gallery-container">
+                <div class="gallery-container background">
+                    <div class="gallery-container-each-image">
+                        <span  class="like-count" id="1_count">0</span>
+                        <div class="box">
+                            <img class="gallery-image" id="1_image" src="images/chai.jpg">
+                            <img class="like-icon" id="1_icon" src="images/little-heart.jpg">
+                        </div>
+                    </div>
+                    <div class="gallery-container-each-image">
+                        <span class="like-count" id="2_count">0</span>
+                        <div class="box">
+                            <img class="gallery-image" id="2_image" src="images/salmon_avo.jpg">
+                            <img class="like-icon" id="2_icon" src="images/little-heart.jpg">
+                        </div>
+                    </div>
+                    <div class="gallery-container-each-image">
+                        <span class="like-count" id="3_count">0</span>
+                        <div class="box">
+                            <img class="gallery-image" id="3_image" src="images/baby.jpg">
+                            <img class="like-icon" id="3_icon" src="images/little-heart.jpg">
+                        </div>
+                    </div>
+                    <!--API call fetches the rest of images here-->
+                </div>
+            </div>
+            <!--Gallery extra info-->
+            <div class="gallery-message" id="gallery-message">
+                Stay tuned for more pictures
+            </div>
+            <div class="button-container-gallery">
+                <div class="gallery-button-dark" id="gallery-load-more">
+                    <div class="middle">Load more ...</div>
+                </div>
+                <a href="https://wwww.facebook.com/therusticcafe"
+                target="_blank" rel="noopener noreferrer">
+                <div class="gallery-button-orange">
+                    
+                    <div class="middle">Or follow us
+                    <span class="icon fa fa-facebook"></span></div>
+                </div></a>
+            </div>
+        </div>
+
+        <!--Contact page-->
+        <div id="contact" class="background">
+            <!--Header pic-->
+            <div class="header-pic-container">
+                <img class="header-pic" src="images/Contact_header.jpg">
+                <div class="page-description-1">
+                    Any questions, comments, or feedback
+                </div>
+                <h1 class="page-title">
+                    Contact Us
+                </h1>
+                <div class="page-description-2">
+                    Please don't hesitate to send us a message
+                </div>
+            </div>
+            
+            <div class="contact-container background">
+                <!--Contact info-->
+                <div>
+                    <div class="contact-section-title">Location</div>
+                    <div class="contact-details"><i class='fa fa-map-marker contact-icon'></i>Shop 3024A, Ground floor, Top Ryde shopping center, Sydney</div>
+                    <div class="contact-details"><i class='fa fa-clock-o contact-icon'></i>Monday - Sunday 7 am - 4 pm </div>
+                    <div class="contact-section-title">Get in touch</div>
+                    <div class="contact-details"><i class='fa fa-phone contact-icon'></i>(02) 7900 5209</div>
+                    <div class="contact-details"><i class='fa fa-envelope contact-icon'></i>therusticcafe@gmail.com</div>
+                    <div class="contact-section-title">Follow us</div>
+                        <ul class="social-contact" style="top: -100%">
+                            <li>
+                                <a href="https://www.facebook.com/therusticcafe"
+                                target="_blank" rel="noopener noreferrer">
+                                  <span class="icon fa fa-facebook"></span>
+                                </a>
+                              </li>
+                            <li>
+                              <a href="https://instagram.com/therusticcafe"
+                              target="_blank" rel="noopener noreferrer">
+                                <span class="icon fa fa-instagram"></span>
+                              </a>
+                            </li>
+                          </ul>
+                </div>
+                <!--Contact form-->
+                <div>
+                    <div class="contact-section-title">Send us a message</div>
+                    <form id="send_message">
+                        <div class="form-group">
+                            <input class="form-control" id="name" placeholder="Your name" required="">
+                        </div>
+                        <div class="form-group">
+                            <input id="phone" class="form-control" placeholder="Your phone number" required="">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" id="email" placeholder="Your email" required="">
+                        </div>
+                        <textarea rows="5" required="" class="form-control" id="message" placeholder="Let us know of any comments, questions, or feedback and we will get back to you as soon as possible"></textarea>
+                        <input type="button" class="contact-submit-button middle" onclick="send_message()" value="Send Message"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <footer>
+            <div class="footer-container">
+                <!--Logo info-->
+                <div class="footer-logo">
+                    <a class="navbar-brand-footer homepage">
+                        <img class="logo homepage" src="images/LatteArtLogoWhite.png" width="40" height="30" class="d-inline-block align-top" alt="">
+                        The Rustic café
+                    </a>
+                    <div class="footer-info">Monday - Sunday: 7 am - 4 pm </div>
+                    <div class="footer-info">Shop 3024A, Ground floor, Top Ryde shopping center</div>
+                    <div class="footer-info"><i class='fa fa-phone contact-icon'></i>(02) 7900-5209</div>
+                    <div class="footer-info"><i class='fa fa-envelope contact-icon'></i>therusticcafe@gmail.com</div>
+                </div>
+                <!--Google map-->
+                <div class="footer-google-map">
+                    <iframe class="footer-google-map-iframe" loading="lazy" allowfullscreen
+                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAZBQvzRExvhHqG8NGU41EqaCVAsaXdCgc
+                            &q=The+rustic+café,Top+Ryde"></iframe>
+                </div>
+                <!--Social icons-->
+                <div class="footer-social-list">
+                    <div class="footer-social-media">Follow Us</div>
+                    <ul class="social">
+                        <li>
+                            <a href="https://www.facebook.com/therusticcafe"
+                            target="_blank" rel="noopener noreferrer">
+                              <span class="icon fa fa-facebook"></span>
+                            </a>
+                          </li>
+                        <li>
+                          <a href="https://instagram.com/therusticcafe"
+                          target="_blank" rel="noopener noreferrer">
+                            <span class="icon fa fa-instagram"></span>
+                          </a>
+                        </li>
+                      </ul>
+                </div>
+                <!--Footer menu bar-->
+                <div class="footer-menu-bar">
+                    <div class="footer-menu homepage">homepage</div>
+                    <div class="footer-menu menu">menu</div>
+                    <div class="footer-menu gallery">Gallery</div>
+                    <div class="footer-menu contact">Contact Us</div>
+                </div> 
+            </div>
+            <!--Copyright-->
+            <div class="copyright" style="padding-bottom: 0;">Copyright © The Rustic café 2021</div>
+            <div class="copyright">All rights reserved</div>
+        </footer>
+    </body>
+</html>

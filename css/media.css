@@ -1,0 +1,328 @@
+
+/* Adjust view on mobile */
+@media screen and (max-width: 375px) {
+
+    /* Adjust header bar logo */
+    .navbar-brand {
+        margin-left: 5%;
+        margin-bottom: 0%;
+    }
+
+
+    /* Adjust footer bar logo */
+    .navbar-brand-footer {
+        margin-left: 0%;
+        margin-bottom: 0%;
+    }
+
+    /* Adjust footer bar section width */
+    .footer-logo {flex: 100%;}
+    .footer-google-map-iframe {
+        flex: 100%;
+        height: 300px; 
+        width: 100%;
+    }
+    ul.social {margin-top: 5%;}
+    .footer-social-list {flex: 100%;}
+    .footer-menu-bar {flex: 100%;}
+
+    /* Adjust footer bar sizing */
+    .footer-info {
+        padding-left: 0%;
+        padding-top: 5%;
+    }
+    .footer-menu {
+        font-size: 18px;
+        padding-bottom: 3%;
+    }
+
+
+    /* Adjust header picture */
+    .header-pic-homepage {filter: brightness(60%)}
+    .header-pic {
+        filter: brightness(60%);
+        height: 70vh;
+    }
+
+    /* Adjust header info font size */
+    .page-title-homepage {font-size: 40px;}
+    .page-description-1-homepage {font-size: 18px;}
+    .page-description-2-homepage {font-size: 12px;}
+    .page-title {font-size: 40px;}
+    .page-description-1 {font-size: 18px;}
+    .page-description-2 {font-size: 12px;}
+
+    /* No button on header pic*/
+    .button-container {display: none;}
+    
+    /* Adjust scroll button*/
+    .page-description-scroll {left: 50%;}
+    .page-description-scroll-text {display: none;}
+
+    /* Adjust each flex box*/
+    .homepage-grid-container {padding: 5%;}
+    .homepage-grid-container > div {margin: 5%;}
+
+    /* Adjust text on flex box*/
+    .homepage-grid-textbox {flex: 100%;}
+    .homepage-grid-title-1 {font-size: 36px;}
+    .homepage-grid-title-2 {font-size: 18px;}
+    .homepage-grid-description {font-size: 16px;}
+
+    /* Adjust image on flex box*/
+    .homepage-grid-image-box {flex: 100%;}
+    .homepage-grid-image {height: 300px;}
+
+    /* Adjust video parallax*/
+    .homepage-parallax-1 {height: 450px;}
+    .homepage-parallax-1 video { 
+        top: 10%;
+        width: 100%;
+    }
+    .homepage-mobile-video-parallax {display: block !important}
+    .homepage-laptop-video-parallax {display: none !important}
+
+    /* Adjust text on parallax*/
+    .title-video-parallax-1{
+        font-size: 28px;
+        padding: 10%;
+        margin-top: 50%;
+    }
+    .title-over-parallax-1 { font-size: 25px;}
+    .homepage-menu-button {
+        width: 130px;
+        height: 45px;
+    }
+
+    /* Adjust sample menu*/
+    .homepage-sample-menu-title {
+        font-size: 30px;
+        padding-top: 5%;
+    }
+    .header-sample-menu-box {flex: 100%;}
+    .sample-menu-container {padding: 5%;}
+    .sample-menu-container > div {margin: 5%;}
+    .header-sample-menu-image {height: 300px;}
+
+    /* Adjust comment section*/
+    .homepage-contact-button {
+        width: 130px;
+        height: 45px;
+        font-size: 14px;
+    }
+    .homepage-comments {padding: 5%;}
+    .homepage-comments > div {margin: 5%;}
+    .comment-content {padding-top: 0%;}
+    .each-comment-item {flex: 100%;}
+
+    /* No sidebar*/
+    .sidebar {display: none;}
+
+
+    /* Adjust menu page*/
+    .menu-message {font-size: 18px;}
+
+    /* Each menu button*/
+    .menu-tab {
+        padding-top: 10%;
+        font-size: 16px;
+    }
+    .each-menu-tab {width: 100px;}
+    .menu-tab-drink {
+        padding-top: 10%;
+        font-size: 16px;
+    }
+    .each-menu-tab-drink {width: 100px;}
+
+    /* Menu item on each section*/
+    .menu-container {padding-bottom: 5%;}
+    .each-menu-item {flex: 100%;}
+
+ 
+    /* Adjust gallery page */
+    /* Adjust gallery container */
+    .gallery-container {padding: 5%;}
+    .gallery-container > div {margin: 5%;}
+    .like-count {font-size: 12px;}
+    .gallery-container-each-image {flex: 100%;}
+
+    /* Adjust gallery buttons */
+    .button-container-gallery {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .gallery-button-dark {font-size: 14px;}
+    .gallery-button-orange {font-size: 14px;}
+
+
+    /* Adjust contact page*/
+    .contact-section-title {font-size: 30px;}
+    .contact-details {font-size: 18px;}
+    .contact-icon {font-size: 22px;}
+    ul.social-contact > li > a {
+        font-size: 20px;
+        line-height: 40px;
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+    }
+}
+
+
+/* Adjust views for tablet */
+@media screen and (min-width: 376px) and (max-width: 766px) {
+
+    /* Adjust footer bar logo*/
+    .navbar-brand-footer {
+        margin-left: 0%;
+        margin-bottom: 0%;
+    }
+
+    /* Adjust footer bar section width */
+    .footer-logo {flex: 30%;}
+    .footer-google-map-iframe {
+        flex: 60%;
+        height: 300px; 
+        width: 100%;
+    }
+    ul.social {margin-top: 5%;}
+    .footer-social-list {flex: 45%;}
+    .footer-menu-bar {flex: 45%;}
+
+    /* Adjust footer bar sizing */
+    .footer-info {
+        padding-left: 0%;
+        padding-top: 5%;
+    }
+    .footer-menu {
+        font-size: 18px;
+        padding-bottom: 3%;
+    }
+
+
+    /* Adjust header picture */
+    .header-pic-homepage {filter: brightness(60%)}
+    .header-pic {
+        filter: brightness(60%);
+        height: 70vh;
+    }
+
+    /* Adjust header info font size */
+    .page-title-homepage {font-size: 7vw;}
+    .page-description-1-homepage {font-size: 3.2vw;}
+    .page-description-2-homepage {font-size: 2.2vw;}
+    .page-title {font-size: 7vw;}
+    .page-description-1 {font-size: 3.2vw;}
+    .page-description-2 {font-size: 2.2vw;}
+
+    /* Adjust header buttons */
+    .header-button-transparent {width: 20vw;}
+    .header-button-white {width: 20vw;}
+
+    /* Adjust scroll button*/
+    .page-description-scroll {left: 50%;}
+    .page-description-scroll-text {display: none;}
+
+    /* Adjust each flex box*/
+    .homepage-grid-textbox {flex: 100%;}
+
+    /* Adjust text on flex box*/
+    .homepage-grid-title-1 {font-size: 44px;}
+    .homepage-grid-title-2 {font-size: 22px;}
+    .homepage-grid-description {font-size: 20px;}
+
+    /* Adjust image on flex box*/
+    .homepage-grid-image-box {flex: 100%;}
+    .homepage-grid-image {height: 350px;}
+
+    /* Adjust video parallax*/
+    .homepage-parallax-1 {height: 300px;}
+    .homepage-parallax-1 video { width: 100%;}
+    .homepage-mobile-video-parallax {display: block !important}
+    .homepage-laptop-video-parallax {display: none !important}
+
+    /* Adjust text on parallax*/
+    .title-video-parallax-1{
+        font-size: 28px;
+        padding: 10%;
+        margin-top: 20%;
+    }
+    .title-over-parallax-1 { font-size: 40px;}
+    .homepage-menu-button {
+        width: 130px;
+        height: 45px;
+    }
+
+    /* Adjust sample menu*/
+    .homepage-sample-menu-title {
+        font-size: 44px;
+        padding-top: 5%;
+    }
+    .header-sample-menu-box {flex: 100%;}
+    .header-sample-menu-image {height: 400px;}
+
+    /* Adjust comment section*/
+    .homepage-contact-button {
+        width: 130px;
+        height: 45px;
+        font-size: 14px;
+    }
+    .comment-content {padding-top: 0%;}
+    .each-comment-item {flex: 100%;}
+    .comment-name {padding-top: 2%;}
+    .homepage-comment-button {margin-top: 5%;}
+    
+    /* No sidebar*/
+    .sidebar {display: none;}
+
+
+
+    /* Adjust menu page*/
+    .menu-message {font-size: 18px;}
+
+    /* Each menu button*/
+    .menu-tab {
+        padding-top: 10%;
+        font-size: 18px;
+    }
+    .each-menu-tab {width: 120px;}
+    .menu-tab-drink {
+        padding-top: 10%;
+        font-size: 18px;
+    }
+    .each-menu-tab-drink {width: 120px;}
+
+    /* Menu item on each section*/
+    .menu-container {padding-bottom: 5%;}
+    .each-menu-item {flex: 300px;}
+
+
+    /* Adjust gallery page */
+    /* Adjust gallery container */
+    .gallery-container {padding: 2%;}
+    .gallery-container > div {margin: 2%;}
+    .like-count {font-size: 10px;}
+    .gallery-container-each-image {flex: 300px;}
+
+    /* Adjust gallery buttons */
+    .button-container-gallery {
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+    .gallery-button-dark {font-size: 2vw;}
+    .gallery-button-orange {font-size: 2vw;}
+
+
+    /* Adjust contact page*/
+    .contact-container > div {flex: 100%;}
+    .contact-section-title {font-size: 30px;}
+    .contact-details {font-size: 18px;}
+    .contact-icon {font-size: 22px;}
+    ul.social-contact > li > a {
+        font-size: 20px;
+        line-height: 40px;
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+    }
+}
