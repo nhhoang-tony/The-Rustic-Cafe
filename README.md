@@ -1,2 +1,2 @@
-# <a href="rusticcafe.com.au">Rusticcafe.com.au</a>
+# <a href="https://www.rusticcafe.com.au">Rusticcafe.com.au</a>
 # Original single page application for Rustic cafe
