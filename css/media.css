@@ -97,8 +97,10 @@
 
     /* Disable parallax on mobile */
     .homepage-parallax-2 {
+        background-attachment: scroll;
         background-image: url("../images/fruitbowl_darken.jpg");
     }
+    .homepage-parallax-3 {background-attachment: scroll;}
 
     /* Adjust sample menu*/
     .homepage-sample-menu-title {
@@ -132,14 +134,14 @@
     /* Each menu button*/
     .menu-tab {
         padding-top: 10%;
-        font-size: 16px;
+        font-size: 13px;
     }
-    .each-menu-tab {width: 100px;}
+    .each-menu-tab {width: 105px;}
     .menu-tab-drink {
         padding-top: 10%;
-        font-size: 16px;
+        font-size: 13px;
     }
-    .each-menu-tab-drink {width: 100px;}
+    .each-menu-tab-drink {width: 105px;}
 
     /* Menu item on each section*/
     .menu-container {padding-bottom: 5%;}
