@@ -46,10 +46,10 @@
 
     /* Adjust header info font size */
     .page-title-homepage {font-size: 40px;}
-    .page-description-1-homepage {font-size: 18px;}
+    .page-description-1-homepage {font-size: 16px;}
     .page-description-2-homepage {font-size: 12px;}
     .page-title {font-size: 40px;}
-    .page-description-1 {font-size: 18px;}
+    .page-description-1 {font-size: 16px;}
     .page-description-2 {font-size: 12px;}
 
     /* No button on header pic*/
@@ -84,14 +84,15 @@
 
     /* Adjust text on parallax*/
     .title-video-parallax-1{
-        font-size: 24px;
+        font-size: 26px;
         padding: 10%;
         margin-top: 55%;
     }
-    .title-over-parallax-1 { font-size: 22px;}
+    .title-over-parallax-1 { font-size: 24px;}
     .homepage-menu-button {
         width: 130px;
         height: 45px;
+        top: 65%;
     }
 
     /* Adjust sample menu*/
@@ -109,6 +110,7 @@
         width: 130px;
         height: 45px;
         font-size: 14px;
+        top: 65%;
     }
     .homepage-comments {padding: 5%;}
     .homepage-comments > div {margin: 5%;}
@@ -156,7 +158,7 @@
 
 
     /* Adjust contact page*/
-    .contact-section-title {font-size: 30px;}
+    .contact-section-title {font-size: 26px;}
     .contact-details {font-size: 18px;}
     .contact-icon {font-size: 22px;}
     ul.social-contact > li > a {

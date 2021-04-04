@@ -36,6 +36,11 @@ document.addEventListener('DOMContentLoaded', function() {
           });
       });
 
+    // close collapse header menu if clicked
+    $('.navbar-collapse a').click(function(){
+        $(".navbar-collapse").collapse('hide');
+    });
+
     // like_icon on gallery page
     $("#gallery-container").on('click', '.like-icon', function() {
         update_like(this);
