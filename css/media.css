@@ -97,10 +97,8 @@
 
     /* Disable parallax on mobile */
     .homepage-parallax-2 {
-        background-attachment: scroll;
         background-image: url("../images/fruitbowl_darken.jpg");
     }
-    .homepage-parallax-3 {background-attachment: scroll;}
 
     /* Adjust sample menu*/
     .homepage-sample-menu-title {
