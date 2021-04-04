@@ -84,16 +84,23 @@
 
     /* Adjust text on parallax*/
     .title-video-parallax-1{
-        font-size: 26px;
+        font-size: 20px;
         padding: 10%;
         margin-top: 55%;
     }
-    .title-over-parallax-1 { font-size: 24px;}
+    .title-over-parallax-1 { font-size: 18px;}
     .homepage-menu-button {
         width: 130px;
         height: 45px;
         top: 65%;
     }
+
+    /* Disable parallax on mobile */
+    .homepage-parallax-2 {
+        background-attachment: scroll;
+        background-image: url("../images/fruitbowl_darken.jpg");
+    }
+    .homepage-parallax-3 {background-attachment: scroll;}
 
     /* Adjust sample menu*/
     .homepage-sample-menu-title {
