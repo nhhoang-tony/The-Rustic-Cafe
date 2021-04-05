@@ -165,9 +165,9 @@
 
 
     /* Adjust contact page*/
-    .contact-section-title {font-size: 26px;}
-    .contact-details {font-size: 18px;}
-    .contact-icon {font-size: 22px;}
+    .contact-section-title {font-size: 23px;}
+    .contact-details {font-size: 15px;}
+    .contact-icon {font-size: 20px;}
     ul.social-contact > li > a {
         font-size: 20px;
         line-height: 40px;
@@ -256,7 +256,7 @@
         padding: 10%;
         margin-top: 15%;
     }
-    .title-over-parallax-1 { font-size: 40px;}
+    .title-over-parallax-1 { font-size: 30px;}
     .homepage-menu-button {
         width: 130px;
         height: 45px;
