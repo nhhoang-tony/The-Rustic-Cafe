@@ -111,6 +111,7 @@
     .sample-menu-container {padding: 5%;}
     .sample-menu-container > div {margin: 5%;}
     .header-sample-menu-image {height: 300px;}
+    #sample-menu-hidden {display: block;}
 
     /* Adjust comment section*/
     .homepage-contact-button {
@@ -267,8 +268,9 @@
         font-size: 44px;
         padding-top: 5%;
     }
-    .header-sample-menu-box {flex: 100%;}
-    .header-sample-menu-image {height: 400px;}
+    .header-sample-menu-box {flex: 45%;}
+    .header-sample-menu-image {height: 300px;}
+    #sample-menu-hidden {display: block;}
 
     /* Adjust comment section*/
     .homepage-contact-button {
@@ -344,4 +346,7 @@
     .page-description-1 {display: none;}
     .page-description-2 {display: none;}
     .button-container {display: none;}
+
+    .homepage-parallax-1 video {top: -75%;}
+    .navbar {padding: 0;}
 }

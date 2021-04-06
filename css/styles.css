@@ -617,6 +617,10 @@ ul.social {
     filter: brightness(40%);
 }
 
+#sample-menu-hidden {
+    display: none;
+}
+
 /* Picture parallax 2 */
   .homepage-parallax-3 {
     /* The image used */
