@@ -52,6 +52,12 @@ document.addEventListener('DOMContentLoaded', function() {
         pic_count = document.querySelector('.gallery-container').childElementCount - 3;
         load_more_picture(Math.ceil((pic_count  + 1)/ 9));
     });
+
+    // send message 
+    document.getElementById("send_message").addEventListener("submit", function(event){
+        event.preventDefault();
+        send_message();
+      });
   });
 
 // display homepage
