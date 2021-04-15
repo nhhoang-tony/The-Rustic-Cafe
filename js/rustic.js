@@ -58,6 +58,9 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault();
         send_message();
       });
+
+    // update page visit count
+    get_visit();
   });
 
 // display homepage
@@ -705,4 +708,61 @@ function formatNumber(num) {
 // remove # from url
 function remove_hash() {
     history.pushState("", document.title, window.location.pathname + window.location.search);
+}
+
+// get page visit count
+async function get_visit() {
+    // instantiate a headers object
+    var myHeaders = new Headers();
+    // add content type header to object
+    myHeaders.append("Content-Type", "application/json");
+    // using built in JSON utility package turn object to string and store in a variable
+    var requestOptions = {
+        method: 'GET',
+        headers: myHeaders,
+        redirect: 'follow'
+    };
+
+    // make API call with parameters and use promises to get response
+    let data = await fetch("https://lff8ghifme.execute-api.ap-southeast-2.amazonaws.com/prod", requestOptions)
+    .then(response => response.text())
+    .then(result => {return JSON.parse(result).body;})
+    .catch(error => console.log('error', error));
+    
+    var count;
+    var domains = JSON.parse(data);
+    for (let i = 0; i < domains.length; i++){
+        if (domains[i].domain == 'rusticcafe.com.au') {
+
+            count = domains[i].count;
+        }
+    }
+    increment_visit(count + 1);
+}
+
+// update page visit count
+function increment_visit(count) {
+    // instantiate a headers object
+    var myHeaders = new Headers();
+    // add content type header to object
+    myHeaders.append("Content-Type", "application/json");
+    // using built in JSON utility package turn object to string and store in a variable
+    var raw = JSON.stringify({"count":count, "domain": "rusticcafe.com.au"});
+    // using built in JSON utility package turn object to string and store in a variable
+    var requestOptions = {
+        method: 'POST',
+        headers: myHeaders,
+        body: raw,
+        redirect: 'follow'
+    };
+
+    // make API call with parameters and use promises to get response
+    fetch("https://sspb2z8a24.execute-api.ap-southeast-2.amazonaws.com/prod", requestOptions)
+    .then(response => response.text())
+    .then(result => {
+        console.log(result);
+        console.log(count);
+        document.getElementById('count').innerHTML = `Visit: ${count}`;
+    })
+    .catch(error => console.log('error', error));
 }
