@@ -185,7 +185,13 @@ async function get_dynamo_menu() {
 
         // sort JSON result from unsorted DynamoDB scan()
         var menu = JSON.parse(data);
-        menu.sort(function(a,b){return a.id - b.id;});
+        //menu.sort(function(a,b){return a.id - b.id;});
+        menu.sort(function(a,b) {
+            if (a.category == b.category) {
+                return (a.name > b.name) ? 1 : -1;
+            }
+            return (a.category > b.category) ? 1 : -1;
+        })
 
         // print out menu to user
         load_menu(menu);
@@ -205,6 +211,7 @@ function load_menu(menu) {
 
     // variables to iterate though menu
     var current_category = '';
+    var current_type = '';
     var all_menu_tab = [];
     var all_menu_section = [];
     var all_drink_tab = [];
@@ -221,7 +228,7 @@ function load_menu(menu) {
         if (menu[i].category != current_category) {
             // create new button
             // check if new category is food or drink
-            if (menu[i].category.toUpperCase().indexOf('DRINK') == -1) {
+            if (menu[i].type == 'FOOD') {
                 all_menu_tab[tab_item_count] = document.createElement('div');
                 all_menu_tab[tab_item_count].setAttribute('class', `each-menu-tab middle ${menu[i].category}`);
                 all_menu_tab[tab_item_count].setAttribute('onclick', `get_menu_section('${menu[i].category}')`);
@@ -238,7 +245,7 @@ function load_menu(menu) {
                 all_drink_tab[tab_item_count_drink] = document.createElement('div');
                 all_drink_tab[tab_item_count_drink].setAttribute('class', `each-menu-tab-drink middle ${menu[i].category}`);
                 all_drink_tab[tab_item_count_drink].setAttribute('onclick', `get_menu_drink('${menu[i].category}')`);
-                all_drink_tab[tab_item_count_drink].innerHTML = `<div class="middle">${menu[i].category.replace("-", " ").toLowerCase()}</div>`;
+                all_drink_tab[tab_item_count_drink].innerHTML = `<div class="middle">${menu[i].category.replace(/-/g, " ").toLowerCase()}</div>`;
                 tab_item_count_drink++;
             }
             
@@ -246,23 +253,25 @@ function load_menu(menu) {
             // if it's the first item in menu 
             if (i == 0) {
                 // check if it's food or drink
-                if (menu[i].category.toUpperCase().indexOf('DRINK') == -1) {
+                if (menu[i].type == 'FOOD') {
                     all_menu_section[section_item_count] = document.createElement('div');
                     all_menu_section[section_item_count].setAttribute('class', 'section menu-container');
                     all_menu_section[section_item_count].setAttribute('id', `${menu[i].category}`);
                     current_category = menu[i].category;
+                    current_type = menu[i].type;
                 }
                 else {
                     all_drink_section[section_item_count_drink] = document.createElement('div');
                     all_drink_section[section_item_count_drink].setAttribute('class', 'section-drink menu-container');
                     all_drink_section[section_item_count_drink].setAttribute('id', `${menu[i].category}`);
                     current_category = menu[i].category;
+                    current_type = menu[i].type;
                 }
             }
             // if reach new category midway through menu
             else {
                 // copy all item within category and reset holder
-                if (current_category.toUpperCase().indexOf('DRINK') == -1) {
+                if (current_type == 'FOOD') {
                     all_menu_section[section_item_count].innerHTML = each_section_holder.innerHTML;
                     each_section_holder.innerHTML = '';
                     section_item_count++;
@@ -274,39 +283,60 @@ function load_menu(menu) {
                 }
 
                 // create new menu section
-                if (menu[i].category.toUpperCase().indexOf('DRINK') == -1) {
+                if (menu[i].type == 'FOOD') {
                     all_menu_section[section_item_count] = document.createElement('div');
                     all_menu_section[section_item_count].setAttribute('class', 'section menu-container');
                     all_menu_section[section_item_count].setAttribute('id', `${menu[i].category}`);
                     current_category = menu[i].category;
+                    current_type = menu[i].type;
                 }
                 else {
                     all_drink_section[section_item_count_drink] = document.createElement('div');
                     all_drink_section[section_item_count_drink].setAttribute('class', 'section-drink menu-container');
                     all_drink_section[section_item_count_drink].setAttribute('id', `${menu[i].category}`);
                     current_category = menu[i].category;
+                    current_type = menu[i].type;
                 }
             }
-            // add the new item in new category to holder
-            each_item = document.createElement('div');
-            each_item.setAttribute('class', 'each-menu-item');
+                // add the new item in new category to holder
+                each_item = document.createElement('div');
+                each_item.setAttribute('class', 'each-menu-item');
+                each_item.setAttribute('id', `${menu[i].id}_each_item`);
 
-            item_name = document.createElement('div');
-            item_name.setAttribute('class', 'item-name');
-            item_name.innerHTML = menu[i].name;
+                item_container = document.createElement('div');
+                item_container.setAttribute('id', `${menu[i].id}_content`);
 
-            item_detail = document.createElement('div');
-            item_detail.setAttribute('class', 'item-details');
-            item_detail.innerHTML = menu[i].description;
+                item_name = document.createElement('div');
+                item_name.setAttribute('class', 'item-name');
+                item_name.setAttribute('id', `${menu[i].id}_item_name`);
+                item_name.innerHTML = menu[i].name;
 
-            item_price = document.createElement('div');
-            item_price.setAttribute('class', 'item-price');
-            item_price.innerHTML = menu[i].price;
+                item_detail = document.createElement('div');
+                item_detail.setAttribute('class', 'item-details');
+                item_detail.setAttribute('id', `${menu[i].id}_item_detail`);
+                item_detail.innerHTML = menu[i].description;
 
-            each_item.append(item_name);
-            each_item.append(item_detail);
-            each_item.append(item_price);
-            each_section_holder.append(each_item);
+                item_price = document.createElement('div');
+                item_price.setAttribute('class', 'item-price');
+                item_price.setAttribute('id', `${menu[i].id}_item_price`);
+                item_price.innerHTML = menu[i].price;
+
+                item_container.append(item_name);
+                item_container.append(item_detail);
+                item_container.append(item_price);
+
+                each_item.append(item_container);
+                each_section_holder.append(each_item);
+
+                // check if last reach end of menu
+                if (i == menu.length - 1) {
+                    // copy all item for last category
+                    if (menu[i].type == 'FOOD') {
+                        all_menu_section[section_item_count].innerHTML = each_section_holder.innerHTML;
+                    } else {
+                        all_drink_section[section_item_count_drink].innerHTML = each_section_holder.innerHTML;
+                    }
+                }
         }
         // else if still within category
         else {
@@ -315,52 +345,70 @@ function load_menu(menu) {
                 // add the last item to holder
                 each_item = document.createElement('div');
                 each_item.setAttribute('class', 'each-menu-item');
+                each_item.setAttribute('id', `${menu[i].id}_each_item`);
+
+                item_container = document.createElement('div');
+                item_container.setAttribute('id', `${menu[i].id}_content`);
 
                 item_name = document.createElement('div');
                 item_name.setAttribute('class', 'item-name');
+                item_name.setAttribute('id', `${menu[i].id}_item_name`);
                 item_name.innerHTML = menu[i].name;
 
                 item_detail = document.createElement('div');
                 item_detail.setAttribute('class', 'item-details');
+                item_detail.setAttribute('id', `${menu[i].id}_item_detail`);
                 item_detail.innerHTML = menu[i].description;
 
                 item_price = document.createElement('div');
                 item_price.setAttribute('class', 'item-price');
+                item_price.setAttribute('id', `${menu[i].id}_item_price`);
                 item_price.innerHTML = menu[i].price;
 
-                each_item.append(item_name);
-                each_item.append(item_detail);
-                each_item.append(item_price);
+                item_container.append(item_name);
+                item_container.append(item_detail);
+                item_container.append(item_price);
+
+                each_item.append(item_container);
                 each_section_holder.append(each_item);
 
                 // copy all item for last category
-                if (menu[i].category.toUpperCase().indexOf('DRINK') == -1) {
+                if (menu[i].type == 'FOOD') {
                     all_menu_section[section_item_count].innerHTML = each_section_holder.innerHTML;
                 } else {
                     all_drink_section[section_item_count_drink].innerHTML = each_section_holder.innerHTML;
                 }
                 
             }
-            // if within category and not at at of menu, add to holder
+            // if within category and not at end of menu, add to holder
             else {
                 each_item = document.createElement('div');
                 each_item.setAttribute('class', 'each-menu-item');
+                each_item.setAttribute('id', `${menu[i].id}_each_item`);
+
+                item_container = document.createElement('div');
+                item_container.setAttribute('id', `${menu[i].id}_content`);
 
                 item_name = document.createElement('div');
                 item_name.setAttribute('class', 'item-name');
+                item_name.setAttribute('id', `${menu[i].id}_item_name`);
                 item_name.innerHTML = menu[i].name;
 
                 item_detail = document.createElement('div');
                 item_detail.setAttribute('class', 'item-details');
+                item_detail.setAttribute('id', `${menu[i].id}_item_detail`);
                 item_detail.innerHTML = menu[i].description;
 
                 item_price = document.createElement('div');
                 item_price.setAttribute('class', 'item-price');
+                item_price.setAttribute('id', `${menu[i].id}_item_price`);
                 item_price.innerHTML = menu[i].price;
 
-                each_item.append(item_name);
-                each_item.append(item_detail);
-                each_item.append(item_price);
+                item_container.append(item_name);
+                item_container.append(item_detail);
+                item_container.append(item_price);
+
+                each_item.append(item_container);
                 each_section_holder.append(each_item);
             }   
         }
@@ -396,31 +444,45 @@ function breakfast_hot_drink() {
     var menu_section = document.getElementsByClassName("section");
     for (var i = 0; i < menu_section.length; i++) {
         menu_section[i].style.display = "none"; 
+        if (i == 0) {
+            menu_section[i].style.display = "flex";
+        }
     }
-    document.getElementById('ALL-DAY-BREAKFAST').style.display = 'flex';
+    // document.getElementById('ALL-DAY-BREAKFAST').style.display = 'flex';
     
     var menu_tab = document.getElementsByClassName("each-menu-tab");
     for (var i = 0; i < menu_tab.length; i++) {
         menu_tab[i].style.backgroundColor= "white";
         menu_tab[i].style.color= "black"; 
+        if (i == 0) {
+            menu_tab[i].style.backgroundColor = "black";
+            menu_tab[i].style.color = "white";
+        }
     }
-    document.querySelector(`.ALL-DAY-BREAKFAST`).style.backgroundColor= "black";
-    document.querySelector(`.ALL-DAY-BREAKFAST`).style.color= "white";
+    // document.querySelector(`.ALL-DAY-BREAKFAST`).style.backgroundColor= "black";
+    // document.querySelector(`.ALL-DAY-BREAKFAST`).style.color= "white";
 
     // auto loads hot drink option
     var drink_section = document.getElementsByClassName("section-drink");
     for (var i = 0; i < drink_section.length; i++) {
         drink_section[i].style.display = "none"; 
+        if (i == 0) {
+            drink_section[i].style.display = "flex";
+        }
     }
-    document.getElementById('HOT-DRINKS').style.display = 'flex';
+    // document.getElementById('HOT-DRINKS').style.display = 'flex';
 
     var drink_tab = document.getElementsByClassName("each-menu-tab-drink");
     for (var i = 0; i < drink_tab.length; i++) {
         drink_tab[i].style.backgroundColor= "white";
         drink_tab[i].style.color= "black"; 
+        if (i == 0) {
+            drink_tab[i].style.backgroundColor = "black";
+            drink_tab[i].style.color = "white";
+        }
     }
-    document.querySelector(`.HOT-DRINKS`).style.backgroundColor= "black";
-    document.querySelector(`.HOT-DRINKS`).style.color= "white";
+    // document.querySelector(`.HOT-DRINKS`).style.backgroundColor= "black";
+    // document.querySelector(`.HOT-DRINKS`).style.color= "white";
 }
 
 // switch among menu tabs if user click
