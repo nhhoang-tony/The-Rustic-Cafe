@@ -284,6 +284,43 @@ nav .navbar-nav li span{
     flex: 8%
 }
 
+.hyperlink {
+    color: rgb(4, 8, 48) !important;
+    transition: color 200ms ease;
+}
+
+.hyperlink:hover {
+    color: #ee7c22 !important;
+    text-decoration: initial;
+    transition: color 200ms ease;
+}
+
+.hyperlink:visited {
+    color:rgb(4, 8, 48);
+}
+
+.hyperlink:active {
+    color: rgb(4, 8, 48);
+}
+
+.hyperlink_footer {
+    transition: color 200ms ease;
+}
+
+.hyperlink_footer:hover {
+    color: #ee7c22 !important;
+    text-decoration: initial;
+    transition: color 200ms ease;
+}
+
+.hyperlink_footer:visited {
+    color:white;
+}
+
+.hyperlink_footer:active {
+    color: white;
+}
+
 /* Each footer section */
 .navbar-brand-footer {
     transition: color 300ms ease;

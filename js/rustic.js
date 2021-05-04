@@ -762,7 +762,6 @@ function increment_visit(count) {
     .then(result => {
         console.log(result);
         console.log(count);
-        document.getElementById('count').innerHTML = `Visit: ${count}`;
     })
     .catch(error => console.log('error', error));
 }
