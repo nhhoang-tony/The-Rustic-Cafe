@@ -657,7 +657,7 @@ async function get_s3_pictures() {
 
     // sort JSON result based on latest pictures
     gallery = JSON.parse(data);
-    galleryKeys.push('A Rustic menu.pdf');
+    galleryKeys.push('A Rustic menu.jpg');
     // make sure menu photo is first
     for (var i = 0; i < gallery.Contents.length; i++) {
       if (gallery.Contents[i].Key !== 'A Rustic menu.jpg') {
