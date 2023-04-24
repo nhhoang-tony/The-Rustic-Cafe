@@ -628,7 +628,7 @@ function get_menu_drink(section) {
 
 // global variable
 var gallery;
-var galleyKeys = [];
+var galleryKeys = [];
 // API call to get pictures from s3
 async function get_s3_pictures() {
   // only fetch pictures when first loaded
