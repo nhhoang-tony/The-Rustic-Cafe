@@ -660,7 +660,7 @@ async function get_s3_pictures() {
     galleryKeys.push('A Rustic menu.pdf');
     // make sure menu photo is first
     for (var i = 0; i < gallery.Contents.length; i++) {
-      if (gallery.Contents[i].Key !== 'A Rustic menu.pdf') {
+      if (gallery.Contents[i].Key !== 'A Rustic menu.jpg') {
         galleryKeys.push(gallery.Contents[i].Key);
       }
     }
