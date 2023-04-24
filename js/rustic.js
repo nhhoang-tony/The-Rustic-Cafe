@@ -628,6 +628,7 @@ function get_menu_drink(section) {
 
 // global variable
 var gallery;
+var galleyKeys = [];
 // API call to get pictures from s3
 async function get_s3_pictures() {
   // only fetch pictures when first loaded
@@ -656,6 +657,13 @@ async function get_s3_pictures() {
 
     // sort JSON result based on latest pictures
     gallery = JSON.parse(data);
+    galleryKeys.push('A Rustic menu.pdf');
+    // make sure menu photo is first
+    for (var i = 0; i < gallery.Contents.length; i++) {
+      if (gallery.Contents[i].Key !== 'A Rustic menu.pdf') {
+        galleyKeys.push(gallery.Contents[i].Key);
+      }
+    }
     load_more_picture(1);
   }
 }
@@ -665,7 +673,7 @@ function load_more_picture(click_time) {
   // if all gallery is shown, display message to user
   if (
     document.querySelector(".gallery-container").childElementCount - 3 >=
-    gallery.Contents.length
+    galleryKeys.length
   ) {
     document.getElementById("gallery-message").style.display = "block";
   } else {
@@ -678,8 +686,8 @@ function load_more_picture(click_time) {
     for (
       var i = (click_time - 1) * 9;
       i <
-      (gallery.Contents.length < click_time * 9
-        ? gallery.Contents.length
+      (galleryKeys.length < click_time * 9
+        ? galleryKeys.length
         : click_time * 9);
       i++
     ) {
@@ -688,7 +696,7 @@ function load_more_picture(click_time) {
 
       like = document.createElement("span");
       like.setAttribute("class", "like-count");
-      like.setAttribute("id", `${gallery.Contents[i].Key}_count`);
+      like.setAttribute("id", `${galleryKeys[i]}_count`);
       like.innerHTML = formatNumber(Math.floor(Math.random() * 10000));
 
       image_box = document.createElement("div");
@@ -696,15 +704,15 @@ function load_more_picture(click_time) {
 
       image = document.createElement("img");
       image.setAttribute("class", "gallery-image");
-      image.setAttribute("id", `${gallery.Contents[i].Key}_image`);
+      image.setAttribute("id", `${galleryKeys[i]}_image`);
       image.setAttribute(
         "src",
-        `https://s3-tony-the-rustic-cafe.s3-ap-southeast-2.amazonaws.com/${gallery.Contents[i].Key}`
+        `https://s3-tony-the-rustic-cafe.s3-ap-southeast-2.amazonaws.com/${galleryKeys[i]}`
       );
 
       like_icon = document.createElement("img");
       like_icon.setAttribute("class", "like-icon");
-      like_icon.setAttribute("id", `${gallery.Contents[i].Key}_icon`);
+      like_icon.setAttribute("id", `${galleryKeys[i]}_icon`);
       like_icon.setAttribute("src", "images/little-heart.jpg");
 
       each_image.append(like);
