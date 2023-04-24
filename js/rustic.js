@@ -661,7 +661,7 @@ async function get_s3_pictures() {
     // make sure menu photo is first
     for (var i = 0; i < gallery.Contents.length; i++) {
       if (gallery.Contents[i].Key !== 'A Rustic menu.pdf') {
-        galleyKeys.push(gallery.Contents[i].Key);
+        galleryKeys.push(gallery.Contents[i].Key);
       }
     }
     load_more_picture(1);
