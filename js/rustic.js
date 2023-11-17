@@ -197,7 +197,7 @@ async function get_dynamo_menu() {
 
     // sort JSON result from unsorted DynamoDB scan()
     menu = JSON.parse(data);
-    console.log('menu ', menu);
+    console.log("menu ", menu);
     //menu.sort(function(a,b){return a.id - b.id;});
     menu.sort(function (a, b) {
       if (a.category == b.category) {
@@ -657,10 +657,10 @@ async function get_s3_pictures() {
 
     // sort JSON result based on latest pictures
     gallery = JSON.parse(data);
-    galleryKeys.push('A Rustic menu.jpg');
+    galleryKeys.push("A Rustic menu.jpg");
     // make sure menu photo is first
     for (var i = 0; i < gallery.Contents.length; i++) {
-      if (gallery.Contents[i].Key !== 'A Rustic menu.jpg') {
+      if (gallery.Contents[i].Key !== "A Rustic menu.jpg") {
         galleryKeys.push(gallery.Contents[i].Key);
       }
     }

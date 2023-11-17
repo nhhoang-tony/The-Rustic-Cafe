@@ -1,5 +1,6 @@
 /* Adjust view on mobile */
 @media screen and (max-width: 430px) {
+
   /* Adjust header bar logo */
   .navbar-brand {
     margin-left: 5%;
@@ -16,17 +17,21 @@
   .footer-logo {
     flex: 100%;
   }
+
   .footer-google-map-iframe {
     flex: 100%;
     height: 300px;
     width: 100%;
   }
+
   ul.social {
     margin-top: 5%;
   }
+
   .footer-social-list {
     flex: 100%;
   }
+
   .footer-menu-bar {
     flex: 100%;
   }
@@ -36,6 +41,7 @@
     padding-left: 0%;
     padding-top: 5%;
   }
+
   .footer-menu {
     font-size: 18px;
     padding-bottom: 3%;
@@ -45,6 +51,7 @@
   .header-pic-homepage {
     filter: brightness(60%);
   }
+
   .header-pic {
     filter: brightness(60%);
     height: 70vh;
@@ -54,18 +61,23 @@
   .page-title-homepage {
     font-size: 40px;
   }
+
   .page-description-1-homepage {
     font-size: 16px;
   }
+
   .page-description-2-homepage {
     font-size: 12px;
   }
+
   .page-title {
     font-size: 40px;
   }
+
   .page-description-1 {
     font-size: 16px;
   }
+
   .page-description-2 {
     font-size: 12px;
   }
@@ -79,6 +91,7 @@
   .page-description-scroll {
     left: 50%;
   }
+
   .page-description-scroll-text {
     display: none;
   }
@@ -87,7 +100,8 @@
   .homepage-grid-container {
     padding: 5%;
   }
-  .homepage-grid-container > div {
+
+  .homepage-grid-container>div {
     margin: 5%;
   }
 
@@ -95,12 +109,15 @@
   .homepage-grid-textbox {
     flex: 100%;
   }
+
   .homepage-grid-title-1 {
     font-size: 36px;
   }
+
   .homepage-grid-title-2 {
     font-size: 18px;
   }
+
   .homepage-grid-description {
     font-size: 16px;
   }
@@ -109,6 +126,7 @@
   .homepage-grid-image-box {
     flex: 100%;
   }
+
   .homepage-grid-image {
     height: 300px;
   }
@@ -117,13 +135,16 @@
   .homepage-parallax-1 {
     height: 350px;
   }
+
   .homepage-parallax-1 video {
     top: 10%;
     width: 100%;
   }
+
   .homepage-mobile-video-parallax {
     display: block !important;
   }
+
   .homepage-laptop-video-parallax {
     display: none !important;
   }
@@ -134,9 +155,11 @@
     padding: 10%;
     margin-top: 55%;
   }
+
   .title-over-parallax-1 {
     font-size: 17px;
   }
+
   .homepage-menu-button {
     width: 130px;
     height: 45px;
@@ -148,6 +171,7 @@
     background-attachment: scroll;
     background-image: url("../images/fruitbowl_darken.jpg");
   }
+
   .homepage-parallax-3 {
     background-attachment: scroll;
   }
@@ -157,18 +181,23 @@
     font-size: 30px;
     padding-top: 5%;
   }
+
   .header-sample-menu-box {
     flex: 100%;
   }
+
   .sample-menu-container {
     padding: 5%;
   }
-  .sample-menu-container > div {
+
+  .sample-menu-container>div {
     margin: 5%;
   }
+
   .header-sample-menu-image {
     height: 300px;
   }
+
   #sample-menu-hidden {
     display: block;
   }
@@ -180,15 +209,19 @@
     font-size: 14px;
     top: 65%;
   }
+
   .homepage-comments {
     padding: 5%;
   }
-  .homepage-comments > div {
+
+  .homepage-comments>div {
     margin: 5%;
   }
+
   .comment-content {
     padding-top: 0%;
   }
+
   .each-comment-item {
     flex: 100%;
   }
@@ -208,13 +241,16 @@
     padding-top: 10%;
     font-size: 13px;
   }
+
   .each-menu-tab {
     width: 105px;
   }
+
   .menu-tab-drink {
     padding-top: 10%;
     font-size: 13px;
   }
+
   .each-menu-tab-drink {
     width: 105px;
   }
@@ -223,6 +259,7 @@
   .menu-container {
     padding-bottom: 5%;
   }
+
   .each-menu-item {
     flex: 100%;
   }
@@ -232,12 +269,15 @@
   .gallery-container {
     padding: 5%;
   }
-  .gallery-container > div {
+
+  .gallery-container>div {
     margin: 5%;
   }
+
   .like-count {
     font-size: 12px;
   }
+
   .gallery-container-each-image {
     flex: 100%;
   }
@@ -247,9 +287,11 @@
     padding-left: 15%;
     padding-right: 15%;
   }
+
   .gallery-button-dark {
     font-size: 14px;
   }
+
   .gallery-button-orange {
     font-size: 14px;
   }
@@ -258,13 +300,16 @@
   .contact-section-title {
     font-size: 23px;
   }
+
   .contact-details {
     font-size: 15px;
   }
+
   .contact-icon {
     font-size: 20px;
   }
-  ul.social-contact > li > a {
+
+  ul.social-contact>li>a {
     font-size: 20px;
     line-height: 40px;
     width: 40px;
@@ -275,6 +320,7 @@
 
 /* Adjust views for tablet */
 @media screen and (min-width: 431px) and (max-width: 769px) {
+
   /* Adjust footer bar logo*/
   .navbar-brand-footer {
     margin-left: 0%;
@@ -285,17 +331,21 @@
   .footer-logo {
     flex: 30%;
   }
+
   .footer-google-map-iframe {
     flex: 60%;
     height: 300px;
     width: 100%;
   }
+
   ul.social {
     margin-top: 5%;
   }
+
   .footer-social-list {
     flex: 45%;
   }
+
   .footer-menu-bar {
     flex: 45%;
   }
@@ -305,6 +355,7 @@
     padding-left: 0%;
     padding-top: 5%;
   }
+
   .footer-menu {
     font-size: 18px;
     padding-bottom: 3%;
@@ -314,6 +365,7 @@
   .header-pic-homepage {
     filter: brightness(60%);
   }
+
   .header-pic {
     filter: brightness(60%);
     height: 70vh;
@@ -323,18 +375,23 @@
   .page-title-homepage {
     font-size: 7vw;
   }
+
   .page-description-1-homepage {
     font-size: 3.2vw;
   }
+
   .page-description-2-homepage {
     font-size: 2.2vw;
   }
+
   .page-title {
     font-size: 7vw;
   }
+
   .page-description-1 {
     font-size: 3.2vw;
   }
+
   .page-description-2 {
     font-size: 2.2vw;
   }
@@ -343,6 +400,7 @@
   .header-button-transparent {
     width: 20vw;
   }
+
   .header-button-white {
     width: 20vw;
   }
@@ -351,6 +409,7 @@
   .page-description-scroll {
     left: 50%;
   }
+
   .page-description-scroll-text {
     display: none;
   }
@@ -364,9 +423,11 @@
   .homepage-grid-title-1 {
     font-size: 44px;
   }
+
   .homepage-grid-title-2 {
     font-size: 22px;
   }
+
   .homepage-grid-description {
     font-size: 20px;
   }
@@ -375,6 +436,7 @@
   .homepage-grid-image-box {
     flex: 100%;
   }
+
   .homepage-grid-image {
     height: 350px;
   }
@@ -383,12 +445,15 @@
   .homepage-parallax-1 {
     height: 300px;
   }
+
   .homepage-parallax-1 video {
     width: 100%;
   }
+
   .homepage-mobile-video-parallax {
     display: block !important;
   }
+
   .homepage-laptop-video-parallax {
     display: none !important;
   }
@@ -399,9 +464,11 @@
     padding: 10%;
     margin-top: 15%;
   }
+
   .title-over-parallax-1 {
     font-size: 30px;
   }
+
   .homepage-menu-button {
     width: 130px;
     height: 45px;
@@ -412,12 +479,15 @@
     font-size: 44px;
     padding-top: 5%;
   }
+
   .header-sample-menu-box {
     flex: 45%;
   }
+
   .header-sample-menu-image {
     height: 300px;
   }
+
   #sample-menu-hidden {
     display: block;
   }
@@ -428,15 +498,19 @@
     height: 45px;
     font-size: 14px;
   }
+
   .comment-content {
     padding-top: 0%;
   }
+
   .each-comment-item {
     flex: 100%;
   }
+
   .comment-name {
     padding-top: 2%;
   }
+
   .homepage-comment-button {
     margin-top: 5%;
   }
@@ -456,13 +530,16 @@
     padding-top: 10%;
     font-size: 18px;
   }
+
   .each-menu-tab {
     width: 120px;
   }
+
   .menu-tab-drink {
     padding-top: 10%;
     font-size: 18px;
   }
+
   .each-menu-tab-drink {
     width: 120px;
   }
@@ -471,6 +548,7 @@
   .menu-container {
     padding-bottom: 5%;
   }
+
   .each-menu-item {
     flex: 300px;
   }
@@ -480,12 +558,15 @@
   .gallery-container {
     padding: 2%;
   }
-  .gallery-container > div {
+
+  .gallery-container>div {
     margin: 2%;
   }
+
   .like-count {
     font-size: 10px;
   }
+
   .gallery-container-each-image {
     flex: 300px;
   }
@@ -495,27 +576,33 @@
     padding-left: 30%;
     padding-right: 30%;
   }
+
   .gallery-button-dark {
     font-size: 2vw;
   }
+
   .gallery-button-orange {
     font-size: 2vw;
   }
 
   /* Adjust contact page*/
-  .contact-container > div {
+  .contact-container>div {
     flex: 100%;
   }
+
   .contact-section-title {
     font-size: 30px;
   }
+
   .contact-details {
     font-size: 18px;
   }
+
   .contact-icon {
     font-size: 22px;
   }
-  ul.social-contact > li > a {
+
+  ul.social-contact>li>a {
     font-size: 20px;
     line-height: 40px;
     width: 40px;
@@ -529,15 +616,19 @@
   .page-description-1-homepage {
     display: none;
   }
+
   .page-description-2-homepage {
     display: none;
   }
+
   .page-description-1 {
     display: none;
   }
+
   .page-description-2 {
     display: none;
   }
+
   .button-container {
     display: none;
   }
@@ -545,6 +636,7 @@
   .homepage-parallax-1 video {
     top: -75%;
   }
+
   .navbar {
     padding: 0;
   }
