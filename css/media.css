@@ -1,6 +1,5 @@
 /* Adjust view on mobile */
 @media screen and (max-width: 430px) {
-
   /* Adjust header bar logo */
   .navbar-brand {
     margin-left: 5%;
@@ -101,7 +100,7 @@
     padding: 5%;
   }
 
-  .homepage-grid-container>div {
+  .homepage-grid-container > div {
     margin: 5%;
   }
 
@@ -169,7 +168,7 @@
   /* Disable parallax on mobile */
   .homepage-parallax-2 {
     background-attachment: scroll;
-    background-image: url("../images/fruitbowl_darken.jpg");
+    background-image: url('../images/fruitbowl_darken.jpg');
   }
 
   .homepage-parallax-3 {
@@ -190,7 +189,7 @@
     padding: 5%;
   }
 
-  .sample-menu-container>div {
+  .sample-menu-container > div {
     margin: 5%;
   }
 
@@ -214,7 +213,7 @@
     padding: 5%;
   }
 
-  .homepage-comments>div {
+  .homepage-comments > div {
     margin: 5%;
   }
 
@@ -270,7 +269,7 @@
     padding: 5%;
   }
 
-  .gallery-container>div {
+  .gallery-container > div {
     margin: 5%;
   }
 
@@ -309,7 +308,7 @@
     font-size: 20px;
   }
 
-  ul.social-contact>li>a {
+  ul.social-contact > li > a {
     font-size: 20px;
     line-height: 40px;
     width: 40px;
@@ -320,7 +319,6 @@
 
 /* Adjust views for tablet */
 @media screen and (min-width: 431px) and (max-width: 769px) {
-
   /* Adjust footer bar logo*/
   .navbar-brand-footer {
     margin-left: 0%;
@@ -559,7 +557,7 @@
     padding: 2%;
   }
 
-  .gallery-container>div {
+  .gallery-container > div {
     margin: 2%;
   }
 
@@ -586,7 +584,7 @@
   }
 
   /* Adjust contact page*/
-  .contact-container>div {
+  .contact-container > div {
     flex: 100%;
   }
 
@@ -602,7 +600,7 @@
     font-size: 22px;
   }
 
-  ul.social-contact>li>a {
+  ul.social-contact > li > a {
     font-size: 20px;
     line-height: 40px;
     width: 40px;

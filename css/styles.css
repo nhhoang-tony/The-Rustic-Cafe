@@ -11,14 +11,15 @@
 }
 
 .logo:hover {
-  filter: invert(54%) sepia(100%) saturate(2117%) hue-rotate(351deg) brightness(101%) contrast(87%);
+  filter: invert(54%) sepia(100%) saturate(2117%) hue-rotate(351deg)
+    brightness(101%) contrast(87%);
   cursor: pointer;
 }
 
 .navbar-brand {
   transition: color 300ms ease;
   margin-left: 12%;
-  font-family: "Great Vibes", cursive;
+  font-family: 'Great Vibes', cursive;
   font-size: 25px;
 }
 
@@ -143,7 +144,7 @@ nav .navbar-nav li span {
   top: 73%;
 }
 
-.button-container>div {
+.button-container > div {
   margin-right: 5%;
 }
 
@@ -260,7 +261,7 @@ nav .navbar-nav li span {
   padding-bottom: 2%;
 }
 
-.footer-container>div {
+.footer-container > div {
   margin: 2%;
 }
 
@@ -327,7 +328,7 @@ nav .navbar-nav li span {
 .navbar-brand-footer {
   transition: color 300ms ease;
   margin-left: 12%;
-  font-family: "Great Vibes", cursive;
+  font-family: 'Great Vibes', cursive;
   font-size: 25px;
 }
 
@@ -355,11 +356,11 @@ ul.social {
   text-align: left;
 }
 
-ul.social>li {
+ul.social > li {
   display: inline-block;
 }
 
-ul.social>li>a {
+ul.social > li > a {
   display: inline-block;
   text-align: center;
   font-size: 20px;
@@ -374,7 +375,7 @@ ul.social>li>a {
   transition: background-color 300ms ease;
 }
 
-ul.social>li>a:hover {
+ul.social > li > a:hover {
   transition: background-color 300ms ease;
   text-decoration: none;
   background-color: #ee7c22;
@@ -415,7 +416,7 @@ ul.social>li>a:hover {
   padding-bottom: 2%;
 }
 
-.homepage-grid-container>div {
+.homepage-grid-container > div {
   margin: 2%;
 }
 
@@ -430,7 +431,7 @@ ul.social>li>a:hover {
 
 .homepage-grid-title-1 {
   font-size: 60px;
-  font-family: "montserrat";
+  font-family: 'montserrat';
   color: rgb(4, 8, 48);
   text-align: center;
   text-transform: uppercase;
@@ -440,7 +441,7 @@ ul.social>li>a:hover {
 
 .homepage-grid-title-2 {
   font-size: 25px;
-  font-family: "montserrat";
+  font-family: 'montserrat';
   color: rgb(4, 8, 48);
   text-align: center;
   font-weight: bold;
@@ -449,7 +450,7 @@ ul.social>li>a:hover {
 
 .homepage-grid-description {
   font-size: 22px;
-  font-family: "montserrat";
+  font-family: 'montserrat';
   color: rgb(4, 8, 48);
   text-align: center;
   padding-top: 5%;
@@ -459,7 +460,7 @@ ul.social>li>a:hover {
 
 .homepage-grid-link {
   font-size: 22px;
-  font-family: "montserrat";
+  font-family: 'montserrat';
   color: #ee7c22;
   text-decoration: underline;
   text-align: center;
@@ -519,7 +520,7 @@ ul.social>li>a:hover {
 .title-video-parallax-1 {
   color: white;
   font-size: 39px;
-  font-family: "montserrat", cursive;
+  font-family: 'montserrat', cursive;
   font-weight: 700;
   padding-top: 15%;
   text-align: center;
@@ -531,7 +532,7 @@ ul.social>li>a:hover {
   color: white;
   font-size: 39px;
   font-weight: bold;
-  font-family: "montserrat", cursive;
+  font-family: 'montserrat', cursive;
   text-transform: capitalize;
   top: 50%;
   left: 50%;
@@ -543,7 +544,7 @@ ul.social>li>a:hover {
 
 .homepage-parallax-2 {
   /* The image used */
-  background-image: url("../images/Menu_header.jpg");
+  background-image: url('../images/Menu_header.jpg');
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -588,7 +589,7 @@ ul.social>li>a:hover {
 /* Sample menu title*/
 .homepage-sample-menu-title {
   font-size: 60px;
-  font-family: "montserrat";
+  font-family: 'montserrat';
   color: rgb(4, 8, 48);
   background-color: rgb(245, 245, 252);
   text-align: center;
@@ -622,7 +623,7 @@ ul.social>li>a:hover {
   padding-top: 2%;
 }
 
-.sample-menu-container>div {
+.sample-menu-container > div {
   margin: 2%;
 }
 
@@ -661,7 +662,7 @@ ul.social>li>a:hover {
 /* Picture parallax 2 */
 .homepage-parallax-3 {
   /* The image used */
-  background-image: url("../images/Contact_header_dark.jpg");
+  background-image: url('../images/Contact_header_dark.jpg');
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -707,7 +708,7 @@ ul.social>li>a:hover {
 
 /* Comment title flex box*/
 .homepage-comments {
-  font-family: "montserrat";
+  font-family: 'montserrat';
   color: rgb(4, 8, 48);
   background-color: rgb(245, 245, 252);
   opacity: 0.9;
@@ -719,7 +720,7 @@ ul.social>li>a:hover {
   padding-bottom: 2%;
 }
 
-.homepage-comments>div {
+.homepage-comments > div {
   margin: 2%;
 }
 
@@ -775,12 +776,12 @@ ul.social>li>a:hover {
   grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 2%;
   padding-top: 3%;
-  font-family: "montserrat";
+  font-family: 'montserrat';
   color: rgb(4, 8, 48);
   font-size: 16px;
 }
 
-.menu-tab>div {
+.menu-tab > div {
   margin: 1%;
 }
 
@@ -833,12 +834,12 @@ ul.social>li>a:hover {
   grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 2%;
   padding-top: 3%;
-  font-family: "montserrat";
+  font-family: 'montserrat';
   color: rgb(4, 8, 48);
   font-size: 16px;
 }
 
-.menu-tab-drink>div {
+.menu-tab-drink > div {
   margin: 2%;
 }
 
@@ -882,7 +883,7 @@ ul.social>li>a:hover {
 
 /* Menu items on each section */
 .menu-container {
-  font-family: "montserrat";
+  font-family: 'montserrat';
   color: rgb(4, 8, 48);
   background-color: rgb(245, 245, 252);
   opacity: 0.9;
@@ -894,7 +895,7 @@ ul.social>li>a:hover {
   padding-top: 2%;
 }
 
-.menu-container>div {
+.menu-container > div {
   margin: 2%;
 }
 
@@ -921,7 +922,7 @@ ul.social>li>a:hover {
 
 /* Menu message and buttons */
 .menu-message {
-  font-family: "montserrat";
+  font-family: 'montserrat';
   font-size: 24px;
   text-align: center;
   color: rgb(4, 8, 48);
@@ -940,7 +941,7 @@ ul.social>li>a:hover {
   padding-bottom: 2%;
 }
 
-.gallery-container>div {
+.gallery-container > div {
   margin: 2%;
 }
 
@@ -1027,7 +1028,7 @@ ul.social>li>a:hover {
 
 /* Gallery message and buttons */
 #gallery-message {
-  font-family: "montserrat";
+  font-family: 'montserrat';
   font-size: 24px;
   text-align: center;
   color: rgb(4, 8, 48);
@@ -1126,7 +1127,7 @@ a:active {
   padding-bottom: 5%;
 }
 
-.contact-container>div {
+.contact-container > div {
   flex: 40%;
 }
 
@@ -1138,14 +1139,14 @@ a:active {
   font-style: italic;
   text-transform: capitalize;
   padding-bottom: 4%;
-  font-family: "montserrat";
+  font-family: 'montserrat';
 }
 
 .contact-details {
   color: rgb(4, 8, 48);
   font-size: 22px;
   padding-bottom: 3%;
-  font-family: "montserrat";
+  font-family: 'montserrat';
 }
 
 .contact-icon {
@@ -1159,11 +1160,11 @@ ul.social-contact {
   text-align: left;
 }
 
-ul.social-contact>li {
+ul.social-contact > li {
   display: inline-block;
 }
 
-ul.social-contact>li>a {
+ul.social-contact > li > a {
   display: inline-block;
   text-align: center;
   font-size: 30px;
@@ -1178,7 +1179,7 @@ ul.social-contact>li>a {
   transition: background-color 300ms ease;
 }
 
-ul.social-contact>li>a:hover {
+ul.social-contact > li > a:hover {
   transition: background-color 300ms ease;
   text-decoration: none;
   background-color: #ee7c22;
